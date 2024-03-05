@@ -1,0 +1,139 @@
+
+.basket {
+  position: relative;
+  padding-left: 43px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("../../image/header/bascet.svg");
+    width: 16px;
+    height: 14px;
+  }
+}
+
+.basket__count {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: none;
+  width: 21px;
+  height: 21px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.basket__popup {
+  //display: none;
+  position: absolute;
+  z-index: 12;
+  left: -127px;
+  top: 30px;
+  width: 320px;
+  min-height: 224px;
+  padding-top: 6px;
+  background-color: #000000;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border: 6px solid transparent;
+    border-bottom: 6px solid #000000;
+  }
+}
+
+.basket__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.basket__item {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 39px 1fr 10px;
+  align-items: start;
+  box-sizing: border-box;
+}
+
+.basket__title {
+  margin: 0;
+  margin-left: 23px;
+  color: #ffffff;
+  width: min-content;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.basket__item + .basket__item {
+  border-top: 1px solid #444444;
+}
+
+.basket__close-button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.basket__info {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+  padding: 22px 20px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.basket__button {
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  display: block;
+  margin: 20px;
+  padding: 15px 20px;
+  color: #000000;
+  text-align: center;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.basket__popup--closed {
+  display: none;
+}
+
+.basket__popup--opened {
+  display: block;
+}

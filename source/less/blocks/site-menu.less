@@ -1,0 +1,86 @@
+.site-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.page-header--catalog .site-menu {
+  margin-bottom: 22.61px;
+}
+
+.site-menu__item {
+  position: relative;
+}
+
+.site-menu__item--contacts {
+  width: 128px;
+}
+
+.site-menu__link {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 22px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  word-spacing: -0.1em;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 2px solid @focus-color;
+  }
+}
+
+.site-menu__button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 22;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.site-menu__catalog--closed .site-menu__button {
+  background-image: url("../../image/icons/plus.svg");
+}
+
+.site-menu__catalog--opened .site-menu__button {
+  background-image: url("../../image/icons/minus.svg");
+}
+
+.site-menu__catalog {
+  position: relative;
+  display: grid;
+  grid-template-columns: 236px 50px;
+  grid-template-rows: 50px;
+  align-items: center;
+  gap: 7px;
+}
+
+.site-menu__elements {
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 45px;
+}

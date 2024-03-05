@@ -1,0 +1,188 @@
+.modal__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 100;
+}
+
+.modal__container--closed {
+  display: none;
+}
+
+.modal__container--opened {
+  display: flex;
+}
+
+.modal {
+  position: relative;
+  gap: 42px;
+  margin: auto;
+  padding: 62px 70px;
+  background-color: #ffffff;
+  border: 10px solid #000000;
+}
+
+.modal--delivery {
+  width: 920px;
+  box-sizing: border-box;
+}
+
+.modal__close-button {
+  position: absolute;
+  right: 70px;
+  top: 74px;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 42px;
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 50px;
+}
+
+.modal__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.modal-form__group {
+  position: relative;
+  margin: 0;
+}
+
+.modal-form__group--count {
+  width: 180px;
+}
+
+.modal-form__group-label {
+  display: block;
+  margin-bottom: 14px;
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.36px;
+}
+
+.modal-form__group--name,
+.modal-form__group--mail {
+  width: 360px;
+}
+
+.modal-form__group--product {
+  width: 540px;
+}
+
+.modal-form__group-input {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  border: none;
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.modal-form__additionally {
+  display: block;
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.count__header {
+  display: flex;
+  gap: 8px;
+}
+
+.count__info {
+  height: 26px;
+  width: 26px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background-color: @yellow;
+  cursor: pointer;
+  background-image: url("../../img/modal/info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.count__content {
+  display: flex;
+  height: 60px;
+}
+
+.count__input {
+  border: none;
+  background-color: @gray;
+}
+
+.count__button {
+  //padding: 20px 22px;
+  width: 60px;
+  padding: 0;
+  border: none;
+  background-color: @gray;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--reduce {
+    background-image: url("../../img/modal/reduce.svg");
+  }
+
+  &--add {
+    background-image: url("../../img/modal/add.svg");
+  }
+}
+
+.modal-form__group--name {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 15px;
+    height: 12px;
+    background-image: url("../../image/icons/name.svg");
+  }
+}
+
+.modal-form__group--mail {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 15px;
+    height: 12px;
+    background-image: url("../../image/icons/mail.svg");
+  }
+}

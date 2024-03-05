@@ -1,0 +1,67 @@
+.order__container {
+  margin-bottom: 70px;
+}
+
+.order__link {
+  display: grid;
+  grid-template-columns: 125px 1fr 125px;
+  min-height: 100px;
+  align-items: center;
+  background-color: #f0f0f0;
+  text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 2px solid @focus-color;
+  }
+}
+
+.order__logo {
+  display: block;
+  min-height: 100px;
+  background-color: @yellow;
+  background-image: url("../../image/icons/delivery.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.order__icon {
+  margin-left: 42.5px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #dcdcdc;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.order__link:hover .order__logo {
+  background-color: @special-yellow;
+}
+
+.order__link:hover .order__icon {
+  opacity: 1;
+}
+
+.order__link:hover .order__icon-image {
+  opacity: 1;
+}
+
+.order__text {
+  margin: 0;
+  margin-top: 12px;
+  color: #000000;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 20px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,34 @@
+.footer-menu {
+  margin: 0;
+  margin-bottom: 56px;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  gap: 32px;
+}
+
+.footer-menu__link {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    color: @special-yellow;
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 2px solid @focus-color;
+  }
+}

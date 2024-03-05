@@ -1,0 +1,46 @@
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.breadcrumbs__item {
+  position: relative;
+  margin-right: 16px;
+  padding-right: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 4px;
+    height: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("../../image/icons/breadcrumbs-icon.svg");
+  }
+}
+
+.breadcrumbs__link {
+  display: block;
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 2px solid @focus-color;
+  }
+}

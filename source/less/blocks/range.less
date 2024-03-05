@@ -1,0 +1,80 @@
+.range__scale {
+  position: relative;
+  margin-bottom: 13px;
+  width: 200px;
+  height: 2px;
+  background-color: #dcdcdc;
+}
+
+.range__bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 119px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.range__toggle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  &:hover {
+    background-color: @special-yellow;
+  }
+}
+
+.range__toggle--min {
+  left: -9px;
+}
+
+.range__toggle--max {
+  left: 110px;
+}
+
+.range__inputs {
+  margin-left: -14px;
+  display: flex;
+}
+
+.range__label {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  gap: 4px;
+  margin-right: 53px;
+  color: #000000;
+  text-align: left;
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.range__input {
+  padding: 0;
+  margin: 0;
+  width: 30px;
+  border: none;
+  background-color: inherit;
+  appearance: textfield;
+  color: #000000;
+  text-align: left;
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.range__input::-webkit-outer-spin-button,
+.range__input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}

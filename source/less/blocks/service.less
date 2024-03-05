@@ -1,0 +1,63 @@
+.service {
+  display: none;
+  padding-bottom: 72.5px;
+}
+
+.service--active {
+  display: block;
+}
+
+.service__title {
+  margin: 0;
+  margin-top: 72.5px;
+  margin-bottom: 34px;
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 50px;
+}
+
+.service__text {
+  margin: 0;
+  max-width: 475px;
+}
+
+.service--delivery {
+  max-width: 450px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 77.5px;
+    right: 63px;
+    width: 136px;
+    height: 164px;
+    background-image: url("../../image/sevices/delivery.svg");
+  }
+}
+
+.service--garanti {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 62px;
+    right: 28px;
+    width: 171px;
+    height: 195px;
+    background-image: url("../../image/sevices/garanti.svg");
+  }
+}
+
+.service--credit {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 65.5px;
+    right: 28px;
+    width: 156px;
+    height: 188px;
+    background-image: url("../../image/sevices/credit.svg");
+  }
+}
